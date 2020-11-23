@@ -57,6 +57,11 @@ fastRange.addEventListener("change", (ev) => {
     }
 });
 
+function gameOver() {
+    alert("Game over! Press F5 to new game.");
+    location.reload();
+}
+
 /*****************************************************/
 
 //
