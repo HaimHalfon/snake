@@ -27,7 +27,7 @@ function playGame(fast) {
                     prevJ: snake[0].j,
                 };
                 if (checkCollision(nextPoint)) {
-                    alert("Game over! Press F5 to new game.");
+                    gameOver(); // ui call
                     clearInterval(timer);
                     return;
                 }
