@@ -1,0 +1,205 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 170px;
+    height: 500px;
+    margin-right: 15px;
+    background-color: #2C3E50;
+}
+
+.game-menu .top-menu {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.game-menu .top-menu .btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 15px 0px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #EAECEE;
+    color: #2C3E50;
+    cursor: pointer;
+}
+
+.game-menu .top-menu .btn:hover {
+    opacity: 0.8;
+}
+
+.top-menu .btn:nth-child(1) {
+    top: calc(50% - 25px);
+}
+
+.top-menu .btn:nth-child(2) {
+    left: calc(50% - 25px);
+}
+
+.top-menu .btn:nth-child(3) {
+    right: 0;
+    top: calc(50% - 25px);
+}
+
+.top-menu .btn:nth-child(4) {
+    left: calc(50% - 25px);
+    bottom: 0;
+}
+
+.game-menu .top-menu .btn.btn-on {
+    background-color: #F4D03F;
+}
+
+.game-menu .bottom-menu {
+    width: 150px;
+}
+
+.game-menu .bottom-menu label {
+    display: block;
+    text-align: center;
+    color: #EAECEE;
+}
+
+.game-menu .bottom-menu label input {
+    margin-top: 10px;
+}
+
+.game-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    height: 500px;
+    background-color: #EAECEE;
+}
+
+.game-board .row {
+    display: flex;
+    justify-content: center;
+}
+
+.game-board .row .point {
+    width: 20px;
+    height: 20px;
+    background-color: #2C3E50;
+}
+
+.game-board .row .point.white {
+    background-color: #EAECEE;
+}
+
+.game-board .row .point.yellow {
+    background-color: #F4D03F;
+    transition: background-color 0.8s;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color: #2C3E50;
+    text-align: center;
+}
+
+@media (max-width:992px) {
+    section {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100vh;
+    }
+    .game-menu {
+        width: 600px;
+        height: 300px;
+        margin-right: 0;
+        margin-top: 15px;
+        background-color: #EAECEE;
+    }
+    .game-menu .top-menu {
+        width: 190px;
+        height: 190px;
+    }
+    .game-menu .top-menu .btn {
+        width: 70px;
+        height: 70px;
+        padding: 25px 0px;
+        background-color: #2C3E50;
+        color: #EAECEE;
+    }
+    .top-menu .btn:nth-child(1) {
+        top: calc(50% - 35px);
+    }
+    .top-menu .btn:nth-child(2) {
+        left: calc(50% - 35px);
+    }
+    .top-menu .btn:nth-child(3) {
+        top: calc(50% - 35px);
+    }
+    .top-menu .btn:nth-child(4) {
+        left: calc(50% - 35px);
+    }
+    .game-menu .top-menu .btn.btn-on {
+        color: #2C3E50;
+    }
+    .game-menu .bottom-menu label {
+        color: #2C3E50;
+    }
+    .game-board {
+        width: 600px;
+        height: 375px;
+        order: -1;
+    }
+    .game-board .row .point {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-width:600px) {
+    .game-menu {
+        width: 400px;
+    }
+    .game-board {
+        height: 250px;
+        width: 400px;
+    }
+    .game-board .row .point {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+
+/* iphones */
+
+@media (max-width:375px) {
+    .game-menu {
+        width: 360px;
+    }
+    .game-board {
+        height: 225px;
+        width: 360px;
+    }
+    .game-board .row .point {
+        width: 9px;
+        height: 9px;
+    }
+}

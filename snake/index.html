@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section>
+        <div class="game-menu">
+            <div class="top-menu">
+                <div class="btn" data-direction="left">Left</div>
+                <div class="btn" data-direction="up">Up</div>
+                <div class="btn" data-direction="right">Right</div>
+                <div class="btn" data-direction="down">Down</div>
+            </div>
+            <div class="bottom-menu">
+                <label>Fast:
+                    <input type="range" id="fast-range" min="1" max="7">
+                </label>
+            </div>
+        </div>
+        <div class="game-board">
+        </div>
+    </section>
+    <footer>
+        <a href="https://www.linkedin.com/in/haim-halfon-a5a590188/">&copy; Haim Halfon</a>
+    </footer>
+    <script src="ui-game.js"></script>
+    <script src="logic-game.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
